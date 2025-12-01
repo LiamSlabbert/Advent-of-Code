@@ -2,8 +2,6 @@
 
 $dialRotations = file('data.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-$dial = 50;
-
 function findPassword($dialStart, $dialRotations)
 {
 
@@ -26,4 +24,4 @@ function findPassword($dialStart, $dialRotations)
     echo "Password: $password\n";
 }
 
-findPassword($dial, $dialRotations);
+findPassword(50, $dialRotations);
